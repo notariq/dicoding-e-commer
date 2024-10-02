@@ -1,0 +1,5 @@
+Streamlit URL:
+https://notariq-dicoding-e-commerce-dashboarddashboard-c4lgpq.streamlit.app/
+
+Github Repo:
+https://github.com/notariq/dicoding-e-commerce/
