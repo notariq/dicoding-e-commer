@@ -66,6 +66,7 @@ def plot_delivery_time_distribution(success_orders_df):
 
 def plot_delivery_time_vs_review(review_df):
     average_delivery_time = review_df.groupby('review_score')['delivery_time_days'].mean().reset_index()
+    
     plt.figure(figsize=(10, 6))
     sns.barplot(data=average_delivery_time, x='review_score', y='delivery_time_days', color='#5792ff')
     plt.title('Rata-Rata Waktu Pengiriman dengan Ulasan', fontsize=14)
@@ -77,7 +78,7 @@ def plot_delivery_time_vs_review(review_df):
 # Main Function
 def main():
     st.title("Analisa Pengiriman dan Kepuasan Pelanggan ✨")
-    st.caption("Hauzan Ariq Bakri\t\t\t Oktober 2024")
+    st.caption("| Hauzan Ariq Bakri | Oktober 2024 |")
     st.write("")
     orders_df, order_reviews_df = load_data()
     success_orders_df, review_df = clean_data(orders_df, order_reviews_df)
