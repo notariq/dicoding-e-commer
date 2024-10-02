@@ -3,10 +3,10 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Load
+# Load /workspaces/dicoding-e-commerce/Data/order_reviews_dataset.csv
 def load_data():
-    orders_df = pd.read_csv('../Data/orders_dataset.csv')
-    order_reviews_df = pd.read_csv('../Data/order_reviews_dataset.csv')
+    orders_df = pd.read_csv('dicoding-e-commerce/Data/orders_dataset.csv')
+    order_reviews_df = pd.read_csv('dicoding-e-commerce/Data/order_reviews_dataset.csv')
     
     return orders_df, order_reviews_df
 
