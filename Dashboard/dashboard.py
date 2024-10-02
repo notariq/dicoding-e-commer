@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 
 # Load
 def load_data():
-    orders_df = pd.read_csv('Dashboard/orders_dataset.csv')
-    order_reviews_df = pd.read_csv('Dashboard/order_reviews_dataset.csv')
+    orders_df = pd.read_csv('../Data/orders_dataset.csv')
+    order_reviews_df = pd.read_csv('../Data/order_reviews_dataset.csv')
     
     return orders_df, order_reviews_df
 
